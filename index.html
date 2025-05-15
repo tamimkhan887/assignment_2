@@ -1,11 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+        rel="stylesheet">
+    <style>
+        .primaryFont {
+            font-family: "Mulish", sans-serif;
+        }
+
+        .primaryColor {
+            color: #FF5400;
+        }
+    </style>
+    <title>Hero Travel</title>
 </head>
-<body>
-    
+
+<body class="primaryFont container mx-auto">
+    <header>
+        <!-- NavBAr Section -->
+        <section class="mx-4 md:mx-16 lg:mx-24 my-12">
+            <!-- Navbar Section -->
+            <div class="navbar">
+                <div class="navbar-start mr-28">
+                    <div class="flex gap-3 whitespace-nowrap items-center">
+                        <div>
+                            <img src="images/Group 40071 (2).png" alt=""
+                                class="h-10 sm:h-12 md:h-14 lg:h-16 w-auto flex-shrink-0">
+                        </div>
+                        <div>
+                            <a class="text-xl md:text-2xl lg:text-4xl font-extrabold text-[#131318]">Hero <span
+                                    class="primaryColor ">Travel</span></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="hidden lg:navbar-end lg:flex">
+                    <ul class="menu menu-horizontal inline-flex flex-nowrap">
+                        <li><a class="btn btn-ghost  text-[#424247] primaryColor text-lg font-normal">Home</a></li>
+                        <li><a class="btn btn-ghost  text-[#424247] text-lg font-normal">Packages</a></li>
+                        <li><a class="btn btn-ghost  text-[#424247] text-lg font-normal">Testimonial</a></li>
+                        <li><a class="btn btn-ghost  text-[#424247] text-lg font-normal">Blog</a></li>
+                        <li><a class="btn btn-ghost text-[#424247] text-lg font-normal">Contact</a></li>
+                    </ul>
+                </div>
+                <!-- dropDown -->
+                <div class="navbar-end md:navbar-end lg:hidden">
+                    <div class="dropdown dropdown-left">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content rounded-box z-1 mt-12 w-52 -mr-12  p-3 shadow">
+                            <li><a class="btn btn-ghost  text-[#424247] text-lg font-normal">Home</a></li>
+                            <li><a class="btn btn-ghost  text-[#424247] text-lg font-normal">Packages</a></li>
+                            <li><a class="btn btn-ghost  text-[#424247] text-lg font-normal">Testimonial</a></li>
+                            <li><a class="btn btn-ghost  text-[#424247] text-lg font-normal">Blog</a></li>
+                            <li><a class="btn btn-ghost text-[#424247] text-lg font-normal">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </header>
 </body>
+
 </html>
